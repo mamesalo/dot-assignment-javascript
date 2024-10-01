@@ -16,6 +16,7 @@ function calculateSum() {
       "The two entered number are equal the triple of the sum will be shown";
     document.getElementById("t1-result").innerHTML = "Sum = " + result;
   } else {
+    document.getElementById("t1-triple").innerHTML = "";
     document.getElementById("t1-result").innerHTML = "Sum = " + result;
   }
 }
