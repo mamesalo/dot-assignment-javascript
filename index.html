@@ -6,36 +6,84 @@
     <title>Document</title>
   </head>
   <body>
-    <h3>
-      1. Write a JavaScript code to do the following: Add two buttons and an
-      image element, the first image will appear when clicking on the turn off
-      light button. And the second image will appear when clicking on the turn
-      on the light button.
-    </h3>
-    <div style="display: flex; gap: 10px; align-items: center">
-      <button onclick="turnOnLight()">Turn on the light</button>
-      <img id="bulb" src="bulb-on.png" alt="" width="100" height="100" />
-      <button onclick="turnOffLight()">Turn of the light</button>
+    <!-- ......................................... -->
+    <!-- 1 question -->
+    <!-- ......................................... -->
+    <h4>
+      1. Write a JavaScript program to compute the sum of the two given
+      integers, If the two values are the same, then return triple their sum.
+    </h4>
+    <div style="display: flex; gap: 5px">
+      <input type="number" placeholder="Enter a Number" name="" id="t1-num1" />
+      <input type="number" placeholder="Enter a Number" name="" id="t1-num2" />
+      <button onclick="calculateSum()">Calculate Sum</button>
     </div>
-    <h3>
-      2. Write a JavaScript program to get the current Time. Expected Output :
-      H:M:S AM/PM .
-    </h3>
-    <div style="display: flex; gap: 10px">
-      <button onclick="getTime()">Get Time</button>
-      <p id="time"></p>
+    <p id="t1-error" style="color: red"></p>
+    <p id="t1-triple"></p>
+    <p id="t1-result"></p>
+    <!-- ......................................... -->
+    <!-- 2 question -->
+    <!-- ......................................... -->
+    <h4>
+      2.Write a JavaScript program where the program takes a random integer
+      between 1 and 10, and the user is then prompted to input a guess number.
+      The program displays a message "Good Work" if the input matches the guess
+      number otherwise "Not matched".
+    </h4>
+    <div style="display: flex; gap: 5px">
+      <input
+        type="number"
+        placeholder="Enter a Number between 1 - 10"
+        name=""
+        id="t2-num"
+        style="width: 230px"
+        maxlength="2"
+      />
+      <button onclick="guess()">Guess</button>
     </div>
-    <p id="multiplication"></p>
-    <p id="division"></p>
-    <h3>
-      3. Write a JavaScript program to remove the first and the last character
-      in a given string and return the modified string.
-    </h3>
-    <div style="display: flex; gap: 10px">
-      <input id="text1" type="text" placeholder="Enter String " />
-      <button onclick="modifiyString()">Create String</button>
+    <p id="t2-error" style="color: red"></p>
+    <p id="t2-random-num"></p>
+    <p id="t2-result"></p>
+    <!-- ......................................... -->
+    <!-- 3 question -->
+    <!-- ......................................... -->
+    <h4>
+      3. Write a JavaScript program to check whether two given integer values
+      are in the range 50.99 (inclusive). Return true if either of them falls
+      within the range.
+    </h4>
+    <div style="display: flex; gap: 5px">
+      <input type="number" placeholder="Enter a Number" id="t3-num1" />
+      <input type="number" placeholder="Enter a Number" id="t3-num2" />
+      <button onclick="checkRange()">Check</button>
     </div>
-    <p id="string"></p>
+    <p id="t3-error" style="color: red"></p>
+    <p id="t3-result"></p>
+    <!-- ......................................... -->
+    <!-- 4 question -->
+    <!-- ......................................... -->
+    <h4>
+      4. Write a JavaScript program to find the closest value to 100 from two
+      numerical values.
+    </h4>
+    <div style="display: flex; gap: 5px">
+      <input type="number" placeholder="Enter a Number" id="t4-num1" />
+      <input type="number" placeholder="Enter a Number" id="t4-num2" />
+      <button onclick="findClosest()">Check</button>
+    </div>
+    <p id="t4-error" style="color: red"></p>
+    <p id="t4-result"></p>
+    <h4>
+      5. Write a JavaScript program to add items to a blank array and display
+      them.
+    </h4>
+    <div style="display: flex; gap: 5px">
+      <input type="number" placeholder="Enter a Number" id="t5-num" />
+      <button onclick="add()">Add</button>
+      <button onclick="display()">Display</button>
+    </div>
+    <p id="t5-error" style="color: red"></p>
+    <ul id="item-list"></ul>
   </body>
   <script src="app.js"></script>
 </html>
