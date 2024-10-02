@@ -67,7 +67,7 @@ function findClosest() {
   const y = Math.abs(100 - parseFloat(num2.value));
   if (x == y) {
     document.getElementById("t4-result").innerHTML = "both number are equal";
-  } else if (x > y) {
+  } else if (x < y) {
     document.getElementById("t4-result").innerHTML =
       "Number " + num1.value + " is closest value to 100";
   } else {
